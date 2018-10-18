@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#restaurants{
+    margin-left: 15em;
+}
+
+.page-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.rest-name{
+    color: black;
+    text-align: center;
+    font-family: "Courgette";
+    font-size: 1.5em;
+}
