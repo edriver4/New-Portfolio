@@ -1,0 +1,19 @@
+#charlie{
+    word-wrap: inherit;
+    float: left;
+    padding-right: 20px;
+}
+
+#aboutMe{
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.page-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    margin-top: 2em;
+}
