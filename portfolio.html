@@ -10,7 +10,6 @@
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         media="screen,projection" />
     <!--My CSS-->
-    <link type="text/css" rel="stylesheet" href="assets/CSS/portfolio.css">
     <title>Bradley Driver's Portfolio</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,10 +17,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--JavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/CSS/portfolio.css">
 </head>
 
 <body>
-    <nav class="red accent-3">
+    <nav class="blue accent-3">
         <div class="nav-wrapper container">
             <a href="index.html" class="brand-logo" style="font-family:'Pacifico', cursive;">Bradley Driver</a>
             <!-- SideNav -->
@@ -29,16 +29,16 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
+                <li class="font-grow">
                     <a href="portfolio.html">My Portfolio</a>
                 </li>
-                <li>
+                <li class="font-grow">
                     <a href="contact.html">Contact Me</a>
                 </li>
-                <li>
+                <li class="font-grow">
                     <a href="#">Travel Blogs</a>
                 </li>
-                <li>
+                <li class="font-grow">
                     <a href="#">Reviews</a>
                 </li>
             </ul>
@@ -60,7 +60,8 @@
             </ul>
         </div>
     </nav>
-    <video autoplay muted loop id="bg-video"> <source src="assets/Images/matrix.mp4" type="video/mp4"></video>
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/Images/matrix.mp4" type="video/mp4"></video>
     <div class="container" id="restaurants">
         <br>
         <br>
@@ -68,6 +69,86 @@
             <div class="col s5">
                 <!-- Modal Trigger -->
                 <a class="modal-trigger photo" href="#modal1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="responsive-img pic" id="portImage" src="Assets/Images/liri-node-app.png">
+                            </div>
+                            <div class="card-content">
+                                <p class="rest-name">Bamazon</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4 class="rest-place">Bamazon</h4>
+                            <p class="rest-text">
+                                <br>
+                                <h5>Projcet Description:</h5>
+                                <br>
+                                <p>This is an application that runs in the terminal. This app is designed for the back-end
+                                    and uses node.js.</p>
+                                <br>
+                                <p>What this application does is that it allows you to do multiple commands that allow you
+                                    to search concerts, songs on spotify, and Movie information. This app does way more
+                                    than you think but don't listen to me. Try it out for yourself.</p>
+                                <h5>Instructions:</h5>
+                                <ol>
+                                    <li>We need to install package.json</li>
+                                    <li>Run this command in terminal npm install request</li>
+                                    <ol>
+                                        <li>npm install moment</li>
+                                        <li>npm install ./keys</li>
+                                        <li>npm install fs</li>
+                                        <li>npm install node-spotify-api</li>
+                                    </ol>
+                                    <li>Next you will now be able to search for your concerts, spotify, and Movies by using
+                                        commands.</li>
+                                    <li>Whatever command you choose to use make sure you type this in the terminal first.
+                                        node liri.js [Command goes here]. (you don't need the brackets).</li>
+                                </ol>
+                                <br>
+                                <h5>Commands:</h5>
+                                <br>
+                                <h6>Concerts:</h6>
+                                <ol>
+                                    <li>To search for concerts type the following command:
+                                        node liri.js concert-this "artist/band" (Yes you need quotes).</li>
+                                    <li>Then hit enter to return the results.</li>
+                                </ol>
+                                <br>
+                                <h6>Spotify:</h6>
+                                <ol>
+                                    <li>To search for songs type the following command:
+                                        node liri.js spotify-this-song "song" (Yes you need quotes).</li>
+                                    <li>Then hit enter to return the results.</li>
+                                </ol>
+                                <br>
+                                <h6>Movies:</h6>
+                                <ol>
+                                    <li>To search for concerts type the following command:
+                                        node liri.js movie-this "movie" (Yes you need quotes).</li>
+                                    <li>
+                                        Then hit enter to return the results.
+                                    </li>
+                                </ol>
+                                <br>
+                                <p class="source">Check This Web App Out!</p>
+                                <br>Click this link:
+                                <a href="https://github.com/edriver4/bamazon" target="_blank">
+                                    https://github.com/edriver4/bamazon</a>
+                            </p>
+    
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close x</a>
+                        </div>
+                    </div> 
+            </div>
+            <div class="col s1"></div>
+            <div class="col s5">
+                <!-- Modal Trigger -->
+                <a class="modal-trigger photo" href="#modal2">
                     <div class="card">
                         <div class="card-image">
                             <img class="responsive-img pic" id="portImage" src="Assets/Images/liri-node-app.png">
@@ -78,7 +159,7 @@
                     </div>
                 </a>
                 <!-- Modal Structure -->
-                <div id="modal1" class="modal modal-fixed-footer">
+                <div id="modal2" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="rest-place">Liri-Node-App</h4>
                         <p class="rest-text">
@@ -148,7 +229,7 @@
         <div class="row">
             <div class="col s5">
                 <!--Next one-->
-                <a class="modal-trigger photo" href="#modal2">
+                <a class="modal-trigger photo" href="#modal3">
                     <div class="card">
                         <div class="card-image">
                             <img class="responsive-img pic" id="portImage" src="Assets/Images/Bon Voyage.png">
@@ -159,7 +240,7 @@
                     </div>
                 </a>
                 <!-- Modal Structure -->
-                <div id="modal2" class="modal modal-fixed-footer">
+                <div id="modal3" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="rest-place">Bon Voyage</h4>
                         <p class="rest-text">
@@ -200,7 +281,7 @@
             <div class="col s1"></div>
             <div class="col s5">
                 <!-- Modal Trigger -->
-                <a class="modal-trigger" href="#modal3">
+                <a class="modal-trigger" href="#modal4">
                     <div class="card">
                         <div class="card-image">
                             <img class="responsive-img pic" id="portImage" src="Assets/Images/Train Scheduler.png">
@@ -211,7 +292,7 @@
                     </div>
                 </a>
                 <!-- Modal Structure -->
-                <div id="modal3" class="modal modal-fixed-footer">
+                <div id="modal4" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="rest-place">Train Scheduler</h4>
                         <p class="rest-text">
@@ -237,7 +318,7 @@
         <div class="row">
             <div class="col s5">
                 <!-- Modal Trigger -->
-                <a class="modal-trigger photo" href="#modal4">
+                <a class="modal-trigger photo" href="#modal5">
                     <div class="card">
                         <div class="card-image">
                             <img class="responsive-img pic" id="portImage" src="Assets/Images/LOTR Trivia Game.png">
@@ -248,7 +329,7 @@
                     </div>
                 </a>
                 <!-- Modal Structure -->
-                <div id="modal4" class="modal modal-fixed-footer">
+                <div id="modal5" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="rest-place">Lord of the Rings Trivia Game</h4>
                         <p class="rest-text">
@@ -277,7 +358,7 @@
             <div class="col s1"></div>
             <div class="col s5">
                 <!-- Modal Trigger -->
-                <a class="modal-trigger" href="#modal5">
+                <a class="modal-trigger" href="#modal6">
                     <div class="card">
                         <div class="card-image">
                             <img class="responsive-img pic" id="portImage" src="Assets/Images/GifSearchTool.png">
@@ -288,7 +369,7 @@
                     </div>
                 </a>
                 <!-- Modal Structure -->
-                <div id="modal5" class="modal modal-fixed-footer">
+                <div id="modal6" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="rest-place">Gif Search Tool</h4>
                         <p class="rest-text">
@@ -334,7 +415,7 @@
         <div class="row">
             <div class="col s5">
                 <!-- Modal Trigger -->
-                <a class="modal-trigger photo" href="#modal6">
+                <a class="modal-trigger photo" href="#modal7">
                     <div class="card">
                         <div class="card-image">
                             <img class="responsive-img pic" id="portImage" src="Assets/Images/Crystal Game.png">
@@ -345,7 +426,7 @@
                     </div>
                 </a>
                 <!-- Modal Structure -->
-                <div id="modal6" class="modal modal-fixed-footer">
+                <div id="modal7" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="rest-place">Crystal Game</h4>
                         <p class="rest-text">
@@ -371,7 +452,7 @@
             <div class="col s1"></div>
             <div class="col s5">
                 <!-- Modal Trigger -->
-                <a class="modal-trigger" href="#modal7">
+                <a class="modal-trigger" href="#modal8">
                     <div class="card">
                         <div class="card-image">
                             <img class="responsive-img pic" id="portImage" src="Assets/Images/Psychic Game .png">
@@ -382,7 +463,7 @@
                     </div>
                 </a>
                 <!-- Modal Structure -->
-                <div id="modal7" class="modal modal-fixed-footer">
+                <div id="modal8" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="rest-place">Physic Game</h4>
                         <p class="rest-text">
@@ -412,7 +493,7 @@
     <br>
     <br>
 
-    <footer class="page-footer red accent-3">
+    <footer class="page-footer blue accent-3">
         <div class="container2">
             © 2018 Copyright
         </div>

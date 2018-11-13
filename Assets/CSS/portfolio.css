@@ -4,6 +4,10 @@ body {
     flex-direction: column;
 }
 
+li:hover {
+    font-size: 36px;
+}
+
 #restaurants{
     margin-left: 15em;
 }
@@ -50,3 +54,7 @@ body {
     min-height: 100%;
     z-index: -1;
 }
+
+nav ul li:hover {
+    font-size: 36px !important;
+ }
